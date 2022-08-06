@@ -1,4 +1,4 @@
-package de.hansemerkur.account.boundary;
+package com.himynameisilnano.account.boundary;
 
 import javax.json.Json;
 import javax.json.JsonObjectBuilder;

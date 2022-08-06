@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euo pipefail option
+cd ${0%/*}
+
+cd ../../..
+mvn clean install -DskipTests
+cd - >& /dev/null
+
+cp ../../../target/kubernetes/* .

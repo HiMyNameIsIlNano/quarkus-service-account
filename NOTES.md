@@ -41,6 +41,20 @@ Q: Ahead-of-time vs Just-in-time compilation
 
 The application is run inside a JVM. It is necessary to have a JVM installed on the target system 
 
+## Kubernetes 
+
+When the 
+
+```xml
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-kubernetes</artifactId>
+</dependency>
+```
+
+is added to the `pom.xml` and then `mvn clean install` gets called a bunch of yml files is produced under `/target/kubernetes`. These
+files contain a few simple instructions on how to deploy the application in `k8s` (i.e. `minikube`).
+
 ## Reminders
 
 - `surefire` plugin runs the Unit Tests (e.g. `@QuarkusTest`)

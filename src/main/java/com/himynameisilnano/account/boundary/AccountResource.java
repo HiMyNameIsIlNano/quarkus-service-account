@@ -1,6 +1,6 @@
-package de.hansemerkur.account.boundary;
+package com.himynameisilnano.account.boundary;
 
-import de.hansemerkur.account.entity.Account;
+import com.himynameisilnano.account.entity.Account;
 
 import javax.annotation.PostConstruct;
 import javax.ws.rs.Consumes;

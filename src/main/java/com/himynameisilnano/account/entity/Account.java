@@ -1,4 +1,4 @@
-package de.hansemerkur.account.entity;
+package com.himynameisilnano.account.entity;
 
 import javax.json.bind.annotation.JsonbCreator;
 import javax.json.bind.annotation.JsonbProperty;

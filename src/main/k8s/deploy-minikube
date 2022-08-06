@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -euo pipefail option
+cd ${0%/*}
+
+cd ../../..
+mvn clean package -Dquarkus.container-image.build=true -DskipTests
+
+# Delete if the application is already running in minikube
+if [ $(minikube service list | grep account-service | wc -l) -gt 0 ]; then
+  kubectl delete -f ./target/kubernetes/minikube.yml
+fi
+
+# Running this while the application is already running in minikube would result in an error. Therefore it is necessary to
+# delete the deployment first
+mvn clean package -Dquarkus.kubernetes.deploy=true -DskipTests
+
+cd - >& /dev/null

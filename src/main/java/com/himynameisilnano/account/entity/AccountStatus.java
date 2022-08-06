@@ -1,4 +1,4 @@
-package de.hansemerkur.account.entity;
+package com.himynameisilnano.account.entity;
 
 public enum AccountStatus {
     OVERDRAWN, CLOSE, OPEN

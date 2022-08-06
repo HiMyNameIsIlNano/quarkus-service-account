@@ -1,6 +1,6 @@
-package de.hansemerkur.account.boundary;
+package com.himynameisilnano.account.boundary;
 
-import de.hansemerkur.account.entity.Account;
+import com.himynameisilnano.account.entity.Account;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.AfterEach;
